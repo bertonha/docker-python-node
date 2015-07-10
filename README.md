@@ -2,7 +2,7 @@ Docker base to use with you project with python and node projects eg. Django + A
 
 Extending it:
 
-    FROM bertonha/python_node
+    FROM bertonha/python-node
 
     RUN npm install -g bower coffee-script
 
