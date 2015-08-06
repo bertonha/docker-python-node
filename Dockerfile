@@ -11,6 +11,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update \
  && DEBIAN_FRONTEND=noninteractive apt-get install -y python python-dev python-pip python3 python3-dev python3-pip \
                                                       curl git build-essential libssl-dev ruby-dev \
                                                       libpq-dev libmysqlclient-dev \
+                                                      libjpeg8-dev zlib1g-dev \
  && rm -rf /var/lib/apt/lists/*
 
 RUN git clone https://github.com/creationix/nvm.git /.nvm
